@@ -2,18 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- head
-
-           Purpose:
-        - Title used here shows up in the browser tab
-        - Link to the favicon (small image that appears in the browser tab)
-        - Link to the CSS file (used to style the webpage)
-
-        When To Modify:
-        - [ ] Project 2 (REQUIRED FEATURE) 
-        - [ ] Project 2 (STRETCH FEATURE) (favicon)
-        - [ ] Any time after
-        -->
+    <!-- head. -->
     <link href="reset.css" rel="stylesheet" type="text/css" />
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="/images/seattle-icon.png">
@@ -23,7 +12,14 @@
 </head>
 
 <body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#links">Links</a>
 
+
+    </nav>
     <!-- navbar [PLACEHOLDER] [ADDED IN UNIT 4] -->
 
     <!-- headings
@@ -46,8 +42,8 @@
         <div>
             <h2>See, Experience, Eat</h2>
             <div class="center-btns">
-                <button type="button" class="btn">Top 5 Sights</button>
-                <button type="button" class="btn">Top 5 Eats</button>
+                <button type="button" class="btn">Mailing List</button>
+                <button type="button" class="btn">Secret Spots</button>
             </div>
         </div>
     </div>
@@ -65,7 +61,7 @@
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
         -->
-    <div class="herobox1">
+    <div class="herobox1" id="about">
         <h2>Seattle, Founded in 1851</h2>
         <p>So you only have one day to tour Seattle and you want to see the city highlights.</p>
         <p>Your day will be jam packed but not to worry as you will be fueled with excitement and wonder as you see all
@@ -73,20 +69,33 @@
             Seattle has to offer.</p>
         <p>Without futher ado, let's jump right into it!</p>
 
-        <h3>What to Expect</h3>
-        <h4>Sights</h4>
-        <ul>
-            <li> <b>Pike Place Market</b> <i>World Famous Flying Fish</i></li>
-            <li> <b>Seattle Water Front</b> <i>Have stroll along the waterfront and visit some eclectic shops</i></li>
-            <li> <b>Space Needle</b> <i>A must visit for any first time visitor - the most reconaziable landmark</i>
-            </li>
-        </ul>
-        <h4>Eat</h4>
-        <ul>
-            <li> <b>World Famous Mac & Cheese</b> <i>Beechers @ Pike Place Market</i></li>
-            <li> <b>Mini Donuts</b> <i>Daily Dozen Doughnut Co. @ Pike Place Market</i></li>
-            <li> <b>Artisnal Ramen</b> <i>Ooink @ Capital Hill</i></li>
-        </ul>
+        <div class="container-top-5">
+            <div id="top5sights">
+                <h2>Top 5 Sights</h2>
+                <ul class="no-markers">
+                    <li> <b>Pike Place Market:</b> <i>World Famous Flying Fish</i></li>
+                    <li> <b>Seattle Water Front:</b> <i>Have stroll along the waterfront and visit some eclectic
+                            shops</i></li>
+                    <li> <b>Space Needle:</b> <i>A must visit for any first time visitor - take a ride up or wait and
+                            view Seattle from a rooftop bar</i></li>
+                    <li><b> South Lake Union:</b> <i> During the summer months wander around Lake Union and watch all
+                            the actiity on the lake</i></li>
+                    <li><b> View Seattle from a Rooftop:</b><i> From Astra hotel in South Lake Union take the elevator
+                            to the rooftop bar - free to get to the bar</i></li>
+                </ul>
+            </div>
+
+            <div id="top5eats">
+                <h2>Top 5 Eats</h2>
+                <ul class="no-markers">
+                    <li> <b>World Famous Mac & Cheese</b> <i>Beechers @ Pike Place Market</i></li>
+                    <li> <b>Mini Donuts</b> <i>Daily Dozen Doughnut Co. @ Pike Place Market</i></li>
+                    <li> <b>Seafood</b> <i>Fish & Chips at @ Ivars Water Front</i></li>
+                    <li> <b>Pho Soup</b> <i>Ahn Noodle House @ Lower Queen Anne</i></li>
+                    <li> <b>Artisnal Ramen</b> <i>Ooink @ Capital Hill</i></li>
+                </ul>
+            </div>
+        </div>
 
 
         <!-- schedule
@@ -100,6 +109,8 @@
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
         -->
+    </div>
+    <div class="schedule-container" id="schedule">
         <h2>Schedule</h2>
 
         <img alt="" src="./img/placeholder.png" />
@@ -116,11 +127,11 @@
             get
             it so often that they know what your asking for). Then Grab a dozen donuts from the daily dozen donut vendor
             stall located across from the flying fish vendor stall.</p>
-        <p>Then wander down to the famously disgusting Gum Wall located one steet below and south of the flying fish
-            vendor
+        <p>Then wander down to the famously disgusting Gum Wall located outside and below the flying fish
+            vendor.
         </p>
 
-        <img alt="Image description" src="./img/example.png" />
+
         <h3>Seattle Water Front - 11:00am - 12:00pm</h3>
         <p>From Pike Place Market continue walking down to the water front, it's a well marked walking path</p>
         <p>Visit some of the eclectic shops along the water front. The shop to to be missed is the Ye'old Curiosity
@@ -146,11 +157,11 @@
             you
             had recommendaiton, they will walk you through what to order.</p>
 
+    </div>
+    <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+    <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] -->
 
-        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
-        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] -->
-
-        <!-- links
+    <!-- links
 
         Purpose:
         - Links to other resources related to the event
@@ -160,6 +171,7 @@
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
         -->
+    <div class="links-container" id="links">
         <h2>Links</h2>
 
         <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
@@ -169,10 +181,11 @@
                 <p>Link description</p>
             </article>
         </a>
-
-        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
-        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
     </div>
+
+    <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+    <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+
 </body>
 
 </html>
