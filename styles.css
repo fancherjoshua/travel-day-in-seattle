@@ -63,6 +63,9 @@ h2 {
 p {
 	line-height: 1rem;
 }
+footer { 
+	text-align: center;
+}
 
 nav {
 	color: white;
@@ -122,11 +125,12 @@ nav a {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	/* 2 equal tracks */
-	
-
 
 }
-
+.seattle-icon {
+	
+	height: 200px; 
+}
 
 
 .top5eats {
